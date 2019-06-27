@@ -1,5 +1,5 @@
 create table pessoa(
-idPessoa int,
+idPessoa int primary key auto_increment,
 nome varchar(40),
 tipo varchar(20),
 cpf varchar(20),
