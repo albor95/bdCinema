@@ -1,1 +1,2 @@
-delete from poltrona where idPoltrona<>'p3';
+Delete from poltrona
+where PolCod = 'S16' And PolCod = 'S15';
