@@ -1,1 +1,2 @@
-delete from sala where idSala=3;
+Delete from sala
+where SalCod = 2;
