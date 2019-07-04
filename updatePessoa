@@ -1,1 +1,0 @@
-update pessoa set nome='Um' where idPessoa=1;
