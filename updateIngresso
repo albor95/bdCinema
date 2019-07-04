@@ -1,0 +1,3 @@
+update ingresso
+set IngVen = 'S'
+Where IngFilCod = 1 and IngSalCod = 3 and IngPolCod = 'F3'
