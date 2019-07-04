@@ -1,0 +1,3 @@
+update telefone
+set TelDDD = 094
+Where TelUsuCod = 1;
