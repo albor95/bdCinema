@@ -1,0 +1,6 @@
+Create table email(
+EmaCod int primary key auto_increment,
+EmaUsuCod int not null,
+Email varchar(100),
+Foreign Key (EmaUsuCod) references usuario (UsuCod)
+);
