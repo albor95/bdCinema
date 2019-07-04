@@ -1,0 +1,4 @@
+Insert into sessao(FilCod, SalCod, SesDatHor, SesIdi, SesLeg)
+values  (1, 3, '2019-07-21 16:00:00', 'Portugês', 'N'),
+		(1, 3, '2019-07-21 20:00:00', 'Inglês', 'S'),
+		(3, 1, '2019-09-01 13:00:00', 'Inglês', 'S');
