@@ -1,0 +1,4 @@
+Insert into sala (SalNom)
+Values ('Sala Arcond'),
+	('Sala Hero'),
+    ('Sala Cry');

@@ -1,1 +1,0 @@
-insert ignore into sala(idSala,nome) values(1,'alpha'),(2,'beta'),(3,'gamma');
