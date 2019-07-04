@@ -1,4 +1,4 @@
-create table sala(
-idSala int primary key,
-nome varchar(20)
+Create table Sala(
+SalCod int primary key auto_increment,
+SalNom varchar(45)
 );
