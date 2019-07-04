@@ -1,1 +1,3 @@
-update filme set nome='vingadores' where genero='açao';
+Update filme
+set FilGen = 'Drama'
+Where FilCod = 3;
