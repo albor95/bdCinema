@@ -1,2 +1,2 @@
-Delete from sala
-where SalCod = 2;
+delete from sessao
+where filCod = 3;
