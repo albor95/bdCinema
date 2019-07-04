@@ -1,0 +1,4 @@
+insert into telefone (TelUsuCod, TelDDD, TelNum)
+values  (1, 047, 9999999),
+		(1, 047, 6666666),
+        (2, 014, 5555555);
