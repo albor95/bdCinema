@@ -1,0 +1,1 @@
+update sala set nome='omega' where idSala=1;
