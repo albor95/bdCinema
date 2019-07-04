@@ -1,0 +1,1 @@
+insert ignore into poltrona(idPoltrona,salafk) values('p1',1),('p2',1),('p3',1);
