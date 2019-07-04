@@ -1,0 +1,2 @@
+insert ignore into filme(nome,genero) values(
+'filme1','açao'),('filme2','terror'),('filme3','comedia');
