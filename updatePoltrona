@@ -1,0 +1,1 @@
+update poltrona set idPoltrona='pol2' where idPoltrona='poltr';
