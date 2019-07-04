@@ -1,0 +1,1 @@
+delete from sala where idSala=3;
