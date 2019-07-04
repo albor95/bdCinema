@@ -1,5 +1,5 @@
-create table filme(
-idFilme int primary key auto_increment,
-nome varchar(40),
-genero varchar(40)
+Create Table Filme(
+FilCod int primary key auto_increment,
+FilNom varchar(45),
+FilGen varchar(45)
 );
