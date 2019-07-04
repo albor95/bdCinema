@@ -1,2 +1,4 @@
-insert ignore into filme(nome,genero) values(
-'filme1','açao'),('filme2','terror'),('filme3','comedia');
+Insert into filme (FilNom, FilGen)
+Values ('O Hobbit - A Desolação de Smaug', 'Aventura'),
+	('Harry Potter e a Pedra Filosofal', 'Fantasia'),
+    ('Até o Último Homem', 'Ação');
