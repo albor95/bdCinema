@@ -1,0 +1,2 @@
+delete from email
+where EmaUsuCod = 3;
