@@ -1,0 +1,4 @@
+insert into email (EmaUsuCod, Email)
+values  (1, 'abdel_back@emailtop.com'),
+		(1, 'abdel@senai.com'),
+		(4, 'pavesi@senai.com');
