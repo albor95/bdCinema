@@ -4,6 +4,8 @@ nome varchar(40),
 tipo varchar(20),
 cpf varchar(20),
 dataNsc date,
-endereco varchar(40),
-cep varchar(20)
+cep varchar(20),
+rua varchar(45),
+numero int(4),
+bairro varchar(40)
 );
