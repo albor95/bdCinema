@@ -1,0 +1,2 @@
+delete from telefone
+where TelUsuCod = 2;
