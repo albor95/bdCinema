@@ -1,0 +1,6 @@
+insert into usuario (UsuNom, UsuTip, UsuCpf, UsuRg, UsuDatNas, UsuEnd, UsuCep)
+# UsuTip: "P" - Padrão / "O" - Operador / "A" - Administrador / "D" - Desenvolvedor 
+values('Abdel', 'D', '666-666-666-66', '6.666.666', '2001-03-14', 'Otto Lofhagen, 417, Centro', '08360-000'),
+	('Alisson', 'A', '666-666-666-66', '6.666.666', '1994-04-30', 'Souza, 945, Aymoré', '08360-000'),
+	('Jardel', 'O', '666-666-666-66', '6.666.666', '1991-09-03', 'Principado Nove, 138, Lageado', '08360-000'),
+	('Vilmar', 'P', '666-666-666-66', '6.666.666', '1987-12-26', 'Maria Toupeira, 441, São Pedro', '08360-000');
