@@ -1,1 +1,3 @@
-update sala set nome='omega' where idSala=1;
+Update sala
+Set SalNom = 'Sala Drama'
+Where SalCod = 3;
