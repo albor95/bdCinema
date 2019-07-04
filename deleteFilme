@@ -1,1 +1,2 @@
-delete from filme where genero='comedia';
+Delete from filme
+where FilCod = 2;
