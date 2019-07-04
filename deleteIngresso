@@ -1,0 +1,2 @@
+Delete from ingresso
+where IngFilCod = 1 And IngSalCod = 3 and IngVen = 'S';
