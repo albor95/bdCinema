@@ -1,1 +1,3 @@
-update poltrona set idPoltrona='pol2' where idPoltrona='poltr';
+Update poltrona 
+set PolCod = 'S01'
+Where PolCod = 'S1';
