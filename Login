@@ -1,0 +1,22 @@
+DELIMITER //
+
+CREATE PROCEDURE Login(IN LogUsuCod int)
+BEGIN
+
+	Update usuario
+    Set UsuLog = 'N'
+    Where UsuLog = 'S' And UsuCod <> 0;
+    
+	Update usuario
+    Set UsuLog = 'S'
+    Where UsuCod = LogUsuCod;
+    
+END 
+
+//
+
+DELIMITER ;
+
+Call Login(1);
+
+Select * from usuario where usucod = 1;
