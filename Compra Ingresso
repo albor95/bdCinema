@@ -1,0 +1,55 @@
+DELIMITER //
+
+CREATE PROCEDURE Compra(IN ComSesCod int, IN ComPolCod int, IN ComIngPre float(4, 2))
+BEGIN
+#--------------------------------------------------
+
+ DECLARE v_finished INTEGER DEFAULT 0;
+        DECLARE  ComFilCodAux int;
+        DECLARE  ComSalCodAux int;
+        DECLARE  ComSesDatAux datetime;
+        DECLARE  ComFilCod int;
+        DECLARE  ComSalCod int;
+        DECLARE  ComSesDat datetime;
+ 
+ DEClARE ingresso_cursor CURSOR FOR 
+ SELECT SesFilCod, SesSalCod, SesDatHor FROM sessao Where SesCod = ComSesCod;
+ 
+ DECLARE CONTINUE HANDLER 
+        FOR NOT FOUND SET v_finished = 1;
+ 
+ OPEN ingresso_cursor;
+ 
+ get_ComFilCod: LOOP
+ 
+ FETCH ingresso_cursor INTO ComFilCodAux, ComSalCodAux, ComSesDatAux;
+ 
+ IF v_finished = 1 THEN 
+ LEAVE get_ComFilCod;
+ END IF;
+ 
+  Set ComFilCod =  ComFilCodAux;
+  Set ComSalCod =  ComSalCodAux;
+  Set ComSesDat =  ComSesDatAux;
+ 
+ END LOOP get_ComFilCod;
+ 
+ #
+ CLOSE ingresso_cursor;
+ 
+#--------------------------------------------------
+
+	insert into ingresso(IngSesCod, IngFilCod, IngSalCod, IngSesDat, IngPolCod, IngPre)
+    values (ComSesCod, ComFilCod, ComSalCod, ComSesDat, ComPolCod, ComIngPre);
+    
+    update ingresso
+    set IngVen = 'S'
+    Where IngSesCod = ComSesCod AND IngFilCod = ComFilCod AND IngSalCod = ComSalCod AND IngSesCod = ComSesCod AND IngPolCod = ComPolCod;
+    
+END 
+
+//
+
+DELIMITER ;
+
+call Compra(9, 'F1', 11.50);
